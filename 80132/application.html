@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Admission Application</title>
+    <style>
+      body {
+        background-image: url("about1.jpg");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      #header {
+        background-color: #336699;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      #content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      input[type="text"], input[type="email"], select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        display: block;
+        background-color: #336699;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      input[type="submit"]:hover {
+        background-color: #204466;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Student Admission Application</h1>
+    </div>
+    <div id="content">
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <label for="program">Program of Interest:</label>
+        <select id="program" name="program" required>
+          <option value="">-- Please select --</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Business Administration">Business Administration</option>
+          <option value="Engineering">Engineering</option>
+        </select>
+        
+        <input type="submit" value="Submit Application">
+      </form>
+    </div>
+  </body>
+</html>
